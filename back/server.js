@@ -11,7 +11,7 @@ mongoose.connect(kalp,({useNewUrlParser:true , useUnifiedTopology: true }))
 
 //by using mongoose.schema method we created a database schema
 const grocerySchema = new mongoose.Schema({
-      groceryItem:String,
+      groceryItem:{type:String},
       isPurchased : {
             type:Boolean,
             default:false
